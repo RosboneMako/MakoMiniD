@@ -57,30 +57,9 @@ preset buttons. It may be easier to use the MMD presets when sharing across mult
 
 SIGNAL PATH
 ------------------------------------------------------------------
-INPUT BLOCK<br/>
-The guitar signal begins being processed at the INPUT block. It then
-moves left to right on the VST diagram. The input block has settings
-for high pass filter, Attack, and Noise Gate.
-
-The high pass filter is very important! This can be your friend when
-an amp is too boomy. This filter has a gentle rolloff that can fix
-boom. Another option is using one of the PreAmp based pedals before
-the amp block. Or use both to get more cutoff.
-
-ATTACK is used for creating Pad/Violin effects and will gradually turn
-the signal volume up after a silent moment in the playing. 
-
-The Noise Gate turns the volume down while not playing. Adjust until
-no noise is heard when not playing.
-
-PEDAL BLOCKS<br/>
-There are six possible pedal locations. These are used for things like
-OverDrive, Distortion, and other gain based effects.
-
-MODULATION BLOCKS<br/>
-There are only two available mod effects that can be used at one time. 
-These blocks can be located in three different locations: before amp,
-after amp, or in the effect path of a reverb/delay block.
+MMD has a fixed signal path. All audio moves from left to right from the signal path diagram.
+Optionally, the Delay and Reverb blocks can be placed in parallel. The UI diagram will not
+be changed when in parallel.
 
 AMPLIFIER BLOCK<br/>
 The amplifier has 200 possible channel settings. There are 30 built in amplifiers
@@ -107,10 +86,6 @@ DELAY AND REVERB BLOCKS<br/>
 These effects are fixed at these positions. The effects are always "ON".
 To bypass the effect set its MIX value to 0 (zero).
 
-OUTPUT BLOCK<br/>
-The final block has controls for balance, stereo effect, and output filters. 
-The stereo effect (WIDTH) will delay either the left or right channel to
-create stereo. 
 
 ON SCREEN CONTROL OPERATION
 ------------------------------------------------------------------
