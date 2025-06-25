@@ -5,7 +5,7 @@
 * Version: 4.00
 * Posted: June 25, 2025
 
-![Demo Image](docs/assets/mmd_demo_400_01.png)
+![Demo Image](docs/mmd_demo_400_01.png)
 
 VERSION
 ------------------------------------------------------------------
