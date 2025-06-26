@@ -260,7 +260,7 @@ The concept of making an Amp IR is:
 4) The difference of those two sweeps is the input EQ response of the amp.
 5) Convert the difference sweep to an IR.
 
-![Demo REW Image](docs/assets/REW_Sweeps_01.png)
+![Demo REW Image](docs/rew_sweeps_01.png)
 
 QUICK GUIDE
 1) Download REW, install, etc.
@@ -317,10 +317,10 @@ terrible noise and harshness. Your guitar will also probably never create freqs 
 you can adjust until it sounds good to your ears. 
 
 EXAMPLE IR PULSE IN GOLDWAVE<br/>
-![Demo GoldWave Image](docs/assets/gw_ir_file_01.png)
+![Demo GoldWave Image](docs/gw_ir_file_01.png)
 
 EXAMPLE FFT VIEW OF IR PULSE IN GOLDWAVE<br/>
-![Demo IR FFT Image](docs/assets/gw_ir_file_02.png)
+![Demo IR FFT Image](docs/gw_ir_file_02.png)
 
 GOLDWAVE SPECIFIC HELP<br/>
 Goldwave is a dedicated audio editor. It has a MAIN window and a CONTROL window. CONTROL lets you monitor the output of the wave file and lets 
