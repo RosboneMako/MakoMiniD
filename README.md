@@ -1,4 +1,4 @@
-#Mako Mini Distortion
+# Mako Mini Distortion
 * JUCE VST guitar processor.
 * Tested on Windows only.
 * Written in Visual C++ 2022.
