@@ -2,8 +2,8 @@
 * JUCE VST guitar processor.
 * Tested on Windows only.
 * Written in Visual C++ 2022.
-* Version: 4.00
-* Posted: June 25, 2025
+* Version: 4.10
+* Posted: July 7, 2025
 
 ![Demo Image](docs/mmd_400_01.png)
 
@@ -11,6 +11,12 @@ VERSION
 ------------------------------------------------------------------
 VERSION 4.00
 * Initial release.<br/>  
+
+VERSION 4.10
+* Fixed pedal compressor bug.<br/>
+* Added more saving code to IR databse.<br/>
+* Rework Flanger to closer resemble standard unit.<br/>
+* Rework Chorus to closer resemble standard unit.<br/>
        
 SUMMARY
 ------------------------------------------------------------------
