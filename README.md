@@ -5,7 +5,7 @@
 * Version: 4.10
 * Posted: July 7, 2025
 
-![Demo Image](docs/mmd_400_01.png)
+![Demo Image](docs/mmd_back_01.png)
 
 VERSION
 ------------------------------------------------------------------
@@ -22,7 +22,7 @@ VERSION 4.20s
 * EXE and VST are compiled using STATIC lib.<br/>
 * 4x Over Sampling added for anti aliasing.<br/>  
 
-NOTE:
+NOTE:<br/>
 Version 4.20s files use the static runtime library option in JUCE.
 Previous versions used dynamic linking and may not run in certain instances.
 An s is added to the version number for identification. 
