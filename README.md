@@ -2,10 +2,10 @@
 * JUCE VST guitar processor.
 * Tested on Windows only.
 * Written in Visual C++ 2022.
-* Version: 4.10
-* Posted: July 7, 2025
+* Version: 4.20s
+* Posted: Feb 5, 2026
 
-![Demo Image](docs/mmd_demo_420s.png)
+![Demo Image](docs/mmd_demo_0420s.png)
 
 VERSION
 ------------------------------------------------------------------
