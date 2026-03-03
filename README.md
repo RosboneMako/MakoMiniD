@@ -160,7 +160,7 @@ is applied. This can be helpful on clean amps for finer control of gain by
 mixing low gain with no gain.
 
 EQ MODE AND LOW PASS<br/>
-There are 10 EQs prgrammed into the VST. Change EQs by changing the MODE
+There are 20 EQs programmed into the VST. Change EQs by changing the MODE
 setting. The low pass is used to filter out harshness from any distortion
 being used.
 
@@ -183,9 +183,6 @@ The offset control changes the left delay time from the right time
 to create a stereo delay effect. Ducking will hold down the delay
 volume while playing and increase it when not playing.
 
-Modulation effect #1 can be placed in the delays wet mix allowing for
-some interesting things like a fifth note chorus on the delay only.
-
 REVERB BLOCK<br/>
 ------------------------------------------------------------------
 MMD has a very simplistic reverb based on 16 different delays being
@@ -196,8 +193,6 @@ effect.
 The reverb effet can be tweaked using the available controls. Specifically
 room size which expands the delays in time. The low pass filter and built-in
 chorus applied to the wet effect helps smooth the echoes.
-
-Modulation Effect #2 can be applied to the wet effect. 
 
 
 EXTERNAL IMPULSE RESPONSES<br/>
@@ -211,11 +206,7 @@ to run at a 48 kHz sample rate. 48 kHz IR files should be used. The
 frequency response of the IR is tightly tied to the sample rate. So 
 the correct sample rate is very important. Once the IR is loaded into
 the VST, it can be resampled using the SIZE control to get close to
-its original frequency response.
-
-Any IRs that are loaded manually have a copy saved inside the MMD
-preset file, so it will not be necessary to hunt them down manually
-at a later date. They will NOT be availabe from any DAW related presets.
+its original frequency response if needed.
 
 
 DIALING IN AN AMPLIFIER<br/> 
@@ -229,7 +220,7 @@ Some amps have a lot of low end present. It may be good to reduce your
 guitars low end before the amp. This can be done with the BOOM setting in the amp block.
 Values in the 80-150 Hz can be very good. 
 
-Using the Dist EQ pedals will provide further control and can be used to
+Using the Dist pedals will provide further EQ control and can be used to
 simulate other amps by boosting gain or freqs such as mids. For example, boosting
 the mids efectively reduces the incoming lows.
 
@@ -252,6 +243,8 @@ section. Thump can add some heavy feel but the added gain from Thump,
 Air, and Power may clutter up the sound. Use sparingly. Best results may
 come from adjusting normal EQ settings.
 
+SWEEPING YOUR AMPLIFIERS
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Q6cssKVIU4?si=s_tK-jyz8H003z86" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ROOM EQ WIZARD - Sweeping your own amps 
 ------------------------------------------------------------------
