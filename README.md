@@ -344,7 +344,7 @@ These two filters will let you form the IR to a useful state without destroying 
 The EQUALIZER destroys phase info. This can be helpful if you need more gain from the IR. IRs are normally a large pulse. By destroying the phase you 
 get a more sinusoidal waveform that has an overall volume much higher than a pulse. You can get 3-6 dB more volume if needed.
 
-GQ also has a MAXIMIZE button that lets you normalize your IR to MAX volume. This will be REQUIRED after applying filters. 
+GW also has a MAXIMIZE button that lets you normalize your IR to MAX volume. This will be REQUIRED after applying filters. 
 
 
 
