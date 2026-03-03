@@ -244,7 +244,8 @@ Air, and Power may clutter up the sound. Use sparingly. Best results may
 come from adjusting normal EQ settings.
 
 SWEEPING YOUR AMPLIFIERS
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_Q6cssKVIU4?si=s_tK-jyz8H003z86" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+A YouTube video is available to quickly demonstrate amplifier sweeping:
+https://www.youtube.com/embed/_Q6cssKVIU4?si=s_tK-jyz8H003z86
 
 ROOM EQ WIZARD - Sweeping your own amps 
 ------------------------------------------------------------------
