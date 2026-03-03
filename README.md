@@ -243,9 +243,10 @@ section. Thump can add some heavy feel but the added gain from Thump,
 Air, and Power may clutter up the sound. Use sparingly. Best results may
 come from adjusting normal EQ settings.
 
-SWEEPING YOUR AMPLIFIERS
-A YouTube video is available to quickly demonstrate amplifier sweeping:
+SWEEPING YOUR AMPLIFIERS<br/>
+A YouTube video is available to quickly demonstrate amplifier sweeping:<br/>
 https://www.youtube.com/embed/_Q6cssKVIU4?si=s_tK-jyz8H003z86
+<br/>
 
 ROOM EQ WIZARD - Sweeping your own amps 
 ------------------------------------------------------------------
