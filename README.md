@@ -88,10 +88,7 @@ block. There are adjustements here for bass/treble balance (voice) and
 resampling of the IR (Size).
 
 There are 20 programmed IRs built in to the VST. An additional 179 IRs can be added
-to the IR databse. IRs can be resampled using the SIZE control. The VOICE option 
-will modify the frequency response of the IR.
-
-Voice only adds brightness to an external IR. Its default value should be 0.
+to the IR databse. IRs can be resampled using the SIZE control.
 
 As with the Amp database, an IR is referenced by its slot number in both MMD and the DAW.
 Changing an IR in the databse will change it everywhere it is referenced. Again, best
@@ -148,10 +145,9 @@ SLOPE<br/>
 MMD amps use two styles of clipping: Hard and Soft. The slope control mixes
 between the two types. Soft is best used for low gain and hard for high gain.
 
-THUMP, AIR, POWER, SAG, and THIN<br/>
+THUMP, AIR, POWER, and THIN<br/>
 Thump and Air boost the low and high freqs using a distorting circuit.<br/>
 Power adds the same distortion across the full range. <br/>
-Sag limits fast transients to simulate an amp running out of power.<br/>
 Thin compresses the signal if a lot of gain is being used.<br/>
 These controls are very helpful for edge of breakup sounds. Adding some
 additional gain with the Power/Thump/Air controls will liven up a cleaner
@@ -171,17 +167,13 @@ being used.
 TIPS AND TRICKS<br/>
 Thump and Air are very useful. They are useful for most gain settings.
 
-Sag is best used on low gain amps to soften crunch. It will reduce clarity 
-on high gain amps. Best to turn it off for high gain.
-
-Thin reduces overall gain. Its main goal is to reduce swirling ghost notes
-caused by the VST having more gain that tubes are capable of doing. So thin 
-is best used for super high gain amps while soloing. 
+Thin reduces overall gain. Its main goal is to reduce aliasing. From version 4.20s on,
+it is better to use the 4x oversampling button.
 
 
 EFFECTS BLOCKS<br/>
 ------------------------------------------------------------------
-This VST uses a fixed signal path. All effects are in place and cant be moved.
+This VST uses a fixed signal path. All effects are in place and cannot be moved.
 
 
 DELAY BLOCK<br/>
@@ -235,23 +227,21 @@ dial in the response of the AMP IR.
 BOOMINESS<br/>
 Some amps have a lot of low end present. It may be good to reduce your
 guitars low end before the amp. This can be done with the BOOM setting in the amp block.
-another option is the INPUT sections HIGH PASS filter. Values in the 80-150 Hz can be very good.
-some pedals have Low EQ options as well. Experiment with each as they have different slopes
-and will provide varying results.
+Values in the 80-150 Hz can be very good. 
 
-Using an OD pedal or the Dist EQ pedals will provide furtherr control and can be used to
-simulate other amps by boosting gain or freqs such as mids.
+Using the Dist EQ pedals will provide further control and can be used to
+simulate other amps by boosting gain or freqs such as mids. For example, boosting
+the mids efectively reduces the incoming lows.
 
 CRISPY HARSHNESS<br/>
 Some amps have a lot of high freqs in them. This results in harshness
-as the gain goes up. There are 6 tools that can be used.
+as the gain goes up. There are several tools that can be used.
 
 1) Guitar tone control. Last resort?
 2) CRISP control in the AMP section. Good start is .1 then move up.
 3) Use a pedal (DIST EQ HI CUT) before the amp block.
-4) use the LOW PASS filter in the amp block.
+4) Use the LOW PASS filter in the amp block.
 5) Use a smoother sounding IR.
-6) Add amp sag in the AMP BLOCK.
 
 RULES OF THUMB<br/>
 Lower gain amps will get more from low pass filters, Thump/Air, and
@@ -266,12 +256,12 @@ come from adjusting normal EQ settings.
 ROOM EQ WIZARD - Sweeping your own amps 
 ------------------------------------------------------------------
 Room EQ Wizard is an amazing software package that lets you make frequency sweeps. It
-can be used to make amplifier IRs for use in Mako Distortion 2.
+can be used to make amplifier and Speaker IRs for use in Mako Mini Distortion.
 
 The concept of making an Amp IR is:
 1) Set the amp to edge of distortion.
-2) Sweep the amp at a high input volume.
-3) Sweep the amp at a very low input volume.
+2) Sweep the amp at a high input volume (0 dbfs).
+3) Sweep the amp at a very low input volume (-40 dbfs).
 4) The difference of those two sweeps is the input EQ response of the amp.
 5) Convert the difference sweep to an IR.
 
@@ -308,7 +298,8 @@ NOTE: If you save individual traces and try to merge them later, REW may not und
 for the final trace before it can be exported as an IR wave file.
 
 BEST CASE SCENARIOS AND THE NEXT LEVEL<br/>
-You may get best results when the amp EQ knobs are set pretty flat. Experiment as needed.
+When doing medium to high gain amps, you may get best results when the amp EQ knobs are set pretty flat. Experiment as needed.
+Low gain amps may often have their EQ controls located before the amps distortion stage. For these amps, you may wish to set the EQ to sounds good to your ear.
 
 If you dial in the amp EQ to sound good to your ears, you can use the 0 dB sweep as your output/speaker IR. This will form a better picture of the amp.
 Since we assume that the input EQ is flattened at high gain, the 0 dB sweep should be the amps output EQ/Speaker/Mics/etc. 
@@ -320,15 +311,15 @@ AUDIO EDITING SOFTWARE - Editing the REW Wave File
 The resulting wave file from REW is very large and is not valid for programs. It needs to be cropped and edited 
 in an audio editing program such as Goldwave.
 
-1) The resulting wave file will be about 512 kB with the actual IR located about 8000 samples into the wave file. 
+1) The resulting wave file will be about 512 kB with the actual IR arbitrarily located in the wave file. 
 2) Crop the wave file at the very start of the IR pulse and to at least 1024 samples after that.
 3) Some IRs will have long sloping waves before the full vol peak. Each point before the peak = lag. Trim pre-peaks as needed. 
 4) At this point you will need to adjust for noise and errors in the sweeps if any.
-5) You may wish to apply a low pass filter to remove noise above 5 kHz.
+5) You may wish to apply a low pass filter to remove noise above 5-7 kHz.
 6) You may wish to apply a high pass filter to tune the bass response. 
 
 In many situations you may have severe noise above 5 kHz. This should be filtered out. It breaks the volume of the IR and adds
-terrible noise and harshness. Your guitar will also probably never create freqs above 2.5 kHz. Since you have the IR file,
+terrible noise and harshness. Your guitar will also probably never create freqs above 2.5 kHz. Since you have the amp IR file,
 you can adjust until it sounds good to your ears. 
 
 EXAMPLE IR PULSE IN GOLDWAVE<br/>
